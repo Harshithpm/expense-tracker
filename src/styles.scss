@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+$button-color: rgb(220, 132, 255);
+
+body {
+  font-family: sans-serif;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  list-style-type: none;
+
+  app-transaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+    span {
+      width: 20px;
+    }
+  }
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin: 20px;
+}
+
+label,
+input {
+  margin: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 25px;
+  background-color: $button-color;
+  color: white;
+  width: 100%;
+  margin: 20px;
+}
+
+.btn:hover {
+  background-color: darken($color: rgb(220, 132, 255), $amount: 50);
+}

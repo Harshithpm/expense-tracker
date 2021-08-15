@@ -1,0 +1,12 @@
+<div class="app">
+  <ul class="transaction-list">
+    <app-transaction
+      class="transaction"
+      *ngFor="let transaction of this.transactions"
+      [transaction]="transaction"
+    ></app-transaction>
+  </ul>
+  <div class="form-container">
+    <app-transaction-form></app-transaction-form>
+  </div>
+</div>

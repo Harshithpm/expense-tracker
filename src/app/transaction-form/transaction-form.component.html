@@ -1,0 +1,8 @@
+<form (ngSubmit)="submitHandler()">
+  <label for="transactionText">Text</label><br>
+  <input type="text" name="transactionText" id="transactionText" [(ngModel)]="transactionText"><br>
+  <label for="transactionAmount">Amount (negative - expense, positive - income)</label><br>
+  <input type="number" name="transactionAmount" id="transactionAmount" [(ngModel)]="transactionAmount"><br>
+
+  <button type="submit" class="btn">Add Transaction</button>
+</form>

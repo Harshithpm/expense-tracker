@@ -1,0 +1,10 @@
+<li [ngClass]="transaction.amount < 0 ? 'minus' : 'plus'">
+  {{ transaction.text }} <span>{{ sign }}</span
+  >{{ transaction.amount }}
+  <button
+    class="delete-btn"
+    (click)="transactionStore.removeTransaction(transaction.id)"
+  >
+    x
+  </button>
+</li>
