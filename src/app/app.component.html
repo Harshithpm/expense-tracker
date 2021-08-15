@@ -1,6 +1,16 @@
 <div class="app">
   <h4>Balance</h4>
   <h1>{{ total }}</h1>
+  <div class="inc-exp-container">
+    <div>
+      <h4>Income</h4>
+      <p class="money plus">{{ income }}</p>
+    </div>
+    <div>
+      <h4>Expense</h4>
+      <p class="money minus">{{ expense }}</p>
+    </div>
+  </div>
   <h3>History</h3>
   <ul class="transaction-list">
     <app-transaction
