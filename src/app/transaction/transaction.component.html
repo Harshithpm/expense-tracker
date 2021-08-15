@@ -1,4 +1,4 @@
-<li [ngClass]="transaction.amount < 0 ? 'minus' : 'plus'">
+<li [ngClass]="transaction.amount < 0 ? 'minus money' : 'plus money'">
   {{ transaction.text }} <span>{{ sign }}</span
   >{{ transaction.amount }}
   <button
